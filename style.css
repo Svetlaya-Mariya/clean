@@ -4,6 +4,7 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .image {
   width: 500px;
   margin: 0 auto;
@@ -13,7 +14,7 @@ body {
 .image img {
   width: 100%;
 }
-.image .more-inf {
+.image .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -32,7 +33,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.add-task {
+.add {
   display: flex;
 }
 ul {
@@ -119,12 +120,12 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-button.delete img {
+button.del-task img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.del-task img:hover {
   transform: rotateZ(0);
 }
 
