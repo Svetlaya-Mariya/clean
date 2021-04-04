@@ -4,7 +4,6 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-
 .image {
   width: 500px;
   margin: 0 auto;
@@ -19,8 +18,11 @@
 }
 
 @media (max-width:768px) {
-.image { text-align: center;
-}
+
+  .image { 
+    text-align: center;
+  }
+
 }
 
 .main-page {
