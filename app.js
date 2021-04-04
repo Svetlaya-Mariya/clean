@@ -36,14 +36,16 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="inp-checkbox";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="inp-task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
 
     deleteButton.className="del-task";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="del-img";
     deleteButton.appendChild(deleteButtonImg);
 
     //and appending.
@@ -66,7 +68,7 @@ var addTask=function(){
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
-
+    listItem.classList="list-task";
     taskInput.value="";
 
 }
