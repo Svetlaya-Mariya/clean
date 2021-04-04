@@ -13,7 +13,11 @@ body {
 .image img {
   width: 100%;
 }
+<<<<<<< HEAD
 .image .more-inf {
+=======
+.aaa .more-inf {
+>>>>>>> dfab489e034c515e1a98adac24698bbe3b17361e
   font-family: fantasy, cursive;
 }
 
