@@ -13,9 +13,9 @@ var addButton=document.querySelector(".add-btn");//first button
 var incompleteTaskHolder=document.getElementById("incomplet-tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 console.log(addButton);
+
 //New task list item
 var createNewTaskElement=function(taskString){
-
     var listItem=document.createElement("li");
 
     //input (checkbox)

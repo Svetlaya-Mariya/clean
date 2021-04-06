@@ -4,37 +4,38 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.image {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.image .main-img {
+.header .header__main-img {
   width: 100%;
 }
-.image .more-info {
+.header .header__more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .image {
+  .header {
     text-align: center;
   }
 }
 
-.main-page {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 .inp-task,
+.add-alem__add__inp-task,
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.add {
+.add-elem__add {
   display: flex;
 }
 /*сброс дефолтных стилей*/
@@ -68,7 +69,9 @@ button {
   color: #3a3a3a;
 }
 /* Heading */
-.section-name {
+.add-elem__section-name,
+.todo-elem__section-name,
+.completed__section-name {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -77,7 +80,8 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
-.inp-task {
+.inp-task,
+.add-alem__add__inp-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -89,12 +93,15 @@ button {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.inp-task:focus {
+.inp-task:focus,
+.add-alem__add__inp-task:focus {
   color: #333;
 }
 
 /* New Task */
-.section-name {
+.add-elem__section-name,
+.todo-elem__section-name,
+.completed__section-name {
   display: block;
   margin: 0 0 20px;
 }
@@ -124,7 +131,8 @@ button {
   font-size: 18px;
   width: 226px;
 }
-.list-task > .inp-task {
+.list-task > .inp-task,
+.list-task > .add-alem__add__inp-task {
   width: 226px;
 }
 .del-task .del-img {
@@ -137,17 +145,19 @@ button {
 }
 
 /* Completed */
-#completed-task .task {
+#completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-task .inp-task {
+.list-task .inp-task,
+.list-task .add-alem__add__inp-task {
   display: none;
 }
 
-.edit-mode .inp-task {
+.edit-mode .inp-task,
+.edit-mode .add-alem__add__inp-task {
   display: inline-block;
   width: 224px;
 }
